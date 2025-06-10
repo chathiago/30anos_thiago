@@ -1,0 +1,19 @@
+@use 'variables';
+
+.button {
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 10px;
+    background-color: variables.$orange;
+    color: variables.$softWhite;
+    transition: all 0.3s ease;
+
+    &:hover {
+        filter: brightness(1.2);
+        transition: all 0.3s ease;
+    }
+}

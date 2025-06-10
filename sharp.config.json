@@ -1,0 +1,7 @@
+{
+    "jpeg": {
+        "quality": 70,
+        "progressive": true,
+        "force": true
+    }
+}

@@ -1,0 +1,102 @@
+@use 'variables';
+@use 'components';
+
+.hero {
+    background-image: url('../images/thaigosam_profile_01.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+
+    .container {
+        height: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+
+        .hero__title {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 3em;
+            font-weight: 200;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            color: variables.$softWhite;
+        }
+
+        .hero__infos {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+
+            &__text {
+                font-size: 2em;
+                color: variables.$black;
+                background-color: variables.$whiteGlass;
+                margin-top: 20px;
+                padding: 10px 20px;
+                border-radius: 10px;
+            }
+
+            &__button {
+                margin-top: 20px;
+            }
+
+        }
+    }
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: variables.$blackGlass;
+        content: '';
+    }
+
+    @media (max-width: 640px) {
+        background-image: url('../images/thaigosam_profile_01_mobile.jpeg');
+
+        .container {
+            padding: 30px 30px;
+
+            .hero__title {
+                font-size: 2.5em;
+                letter-spacing: 0px;
+                text-align: center;
+                line-height: 40px;
+            }
+
+            .hero__infos {
+                flex-direction: column;
+
+                &__text {
+                    font-size: 1.3em;
+                }
+
+                &__button {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 641px) and (max-width: 1024px) {
+        background-image: url('../images/thaigosam_profile_01_tablet.jpeg');
+
+        .container {
+            padding: 0 30px;
+
+            .hero__title {
+                font-size: 3em;
+                text-align: center;
+                line-height: 60px;
+            }
+        }
+    }
+}
