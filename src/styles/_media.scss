@@ -1,0 +1,27 @@
+@use 'variables';
+
+.media {
+    background-color: variables.$black;
+    width: 100vw;
+    height: 50vh;
+    overflow: hidden;
+
+    .container {
+        padding: 0;
+    }
+
+    &__video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    @media (max-width: 640px) {
+        &__video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
