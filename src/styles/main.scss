@@ -8,3 +8,21 @@
     box-sizing: border-box;
     font-family: 'Afacad', sans-serif;
 }
+
+.container {
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+    @media (max-width: 640px) {
+        padding: 0 20px;
+    }
+
+    @media (min-width: 641px) and (max-width: 1024px) {
+        padding: 0 30px;
+    }
+}
