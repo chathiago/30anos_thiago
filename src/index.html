@@ -8,21 +8,58 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
         <div class="container">
             <h1 class="hero__title">Participe da festa de 30 anos de Thiago</h1>
             <div class="hero__infos">
-                <p class="hero__infos__text">Faltam 60d 14h 37m 10s <span id="contador"></span></p>
+                <p class="hero__infos__text"><span id="contador"></span></p>
                 <a class="button" href="#">Confirmar presença</a>
             </div>
         </div>
     </header>
+    <section class="infos container__infos" data-aos="fade-right">
+        <div class="infos__image">
+            <img class="infos__image__item" src="./images/schedule.png" alt="Data">
+        </div>
+        <div class="infos__description">
+            <h1 class="title">Data</h1>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Ipsa illum recusandae placeat ducimus voluptatibus, non soluta, laboriosam dignissimos
+                aperiam veniam qui asperiores, reiciendis quod odit voluptates optio. Laboriosam, inventore incidunt?</p>
+        </div>
+    </section>
+    <section class="infos container__infos infos--reverse" data-aos="fade-left">
+        <div class="infos__image">
+            <img class="infos__image__item" src="./images/place.png" alt="Local do evento">
+        </div>
+        <div class="infos__description">
+            <h1 class="title">Local</h1>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Ipsa illum recusandae placeat ducimus voluptatibus, non soluta, laboriosam dignissimos
+                aperiam veniam qui asperiores, reiciendis quod odit voluptates optio. Laboriosam, inventore incidunt?</p>
+        </div>
+    </section>
+    <section class="infos container__infos" data-aos="fade-right">
+        <div class="infos__image">
+            <img class="infos__image__item" src="./images/gift.png" alt="Lista de presente">
+        </div>
+        <div class="infos__description">
+            <h1 class="title">Presentes</h1>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Ipsa illum recusandae placeat ducimus voluptatibus, non soluta, laboriosam dignissimos
+                aperiam veniam qui asperiores, reiciendis quod odit voluptates optio. Laboriosam, inventore incidunt?</p>
+        </div>
+    </section>
     <section class="media">
         <div class="container">
             <video class="media__video" autoplay loop muted playsinline src="./videos/thiago_sam_animate_01.mp4"></video>
         </div>
     </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./scripts/main.js"></script>
 </body>
 </html>

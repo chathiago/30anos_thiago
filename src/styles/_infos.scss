@@ -1,0 +1,38 @@
+@use 'variables';
+
+.infos {
+    &__image {
+        &__item {
+            max-width: 100px;
+        }
+    }
+
+    @media (max-width: 640px) {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &--reverse {
+        flex-direction: row-reverse;
+
+        .infos__description {
+            text-align: right;
+
+            h1 {
+                text-align: right;
+            }
+        }
+
+        @media (max-width: 640px) {
+            flex-direction: column;
+
+            .infos__description {
+                text-align: left;
+
+                h1 {
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
